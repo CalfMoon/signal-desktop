@@ -70,9 +70,14 @@
                            |___/
 */
 
+/* the bar at the top containing your contact name */
+.module-ConversationHeader {
+  background-color: var(--crust) !important;
+}
+
 /* conversation area */
 .module-timeline {
-   background-color: var(--base) !important;
+  background-color: var(--base) !important;
 }
 
 /* messages */
@@ -84,6 +89,16 @@
 /* replying box */
 .module-quote__primary,
 .module-quote__icon-container {
-    background-color: var(--surface1) !important;
-    border: 0px !important;
+  background-color: var(--surface1) !important;
+  border: 0px !important;
+}
+
+/* the area where you write message, attach file, send vm, etc. */
+.CompositionArea {
+  background-color: var(--crust) !important;
+}
+
+/* the actual typing box */
+.module-composition-input__input {
+  background-color: var(--surface0) !important;
 }
