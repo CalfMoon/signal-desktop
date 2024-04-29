@@ -60,3 +60,30 @@
 .module-conversation-list__item--contact-or-conversation--is-button:focus {
   background-color: var(--surface0) !important;
 }
+
+/*
+ _____         _   _                  _
+|_   _|____  _| |_(_)_ __   __ _     / \   _ __ ___  __ _
+  | |/ _ \ \/ / __| | '_ \ / _` |   / _ \ | '__/ _ \/ _` |
+  | |  __/>  <| |_| | | | | (_| |  / ___ \| | |  __/ (_| |
+  |_|\___/_/\_\\__|_|_| |_|\__, | /_/   \_\_|  \___|\__,_|
+                           |___/
+*/
+
+/* conversation area */
+.module-timeline {
+   background-color: var(--base) !important;
+}
+
+/* messages */
+.module-message__container--incoming,
+.module-message__container--outgoing {
+	background-color: var(--surface0) !important;
+}
+
+/* replying box */
+.module-quote__primary,
+.module-quote__icon-container {
+    background-color: var(--surface1) !important;
+    border: 0px !important;
+}
