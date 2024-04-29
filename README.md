@@ -36,10 +36,27 @@
 
 ## Usage
 
-1. Clone this repository locally
-2. Open the app's settings
-3. Select `import theme` and browse to where you cloned Catppuccin
-4. Select it
+### Manual
+
+#### Windows
+1. Install 7-zip and its asar7z plugin.
+2. Open `C:\Users\user_name\AppData\Local\Programs\signal-desktop\resources\app.asar` with 7zip.
+3. Go into stylesheets directory.
+4. Copy the theme you want to use into the directory.
+5. Right click and edit `manifest.css` file and add import statement at the top. `@import "catppuccin-<flavour>.css";` Replace `<flavour>` with flavour you want to use.
+6. Save and close your editor.
+7. Enjoy!
+
+#### Linux
+1. Install npm's asar package globally. `sudo npm install -g @electron/asar`
+2. Extract asar into a temporary directory and change directory. `asar e /usr/lib/signal-desktop/resources/app.asar temp/ && cd temp/stylesheets`
+3. Copy and paste theme you want to use into current directory.
+4. Add import statement at the top of `manifest.css` file. `@import "catppuccin-<flavour>.css";` Replace `<flavour>` with flavour you want to use.
+5. Remove the temp directory.
+6. Enjoy!
+
+### Semi-Automatically
+Follow the instructions at [signal-themer](https://github.com/CalfMoon/signal-themer).
 
 ## 💝 Thanks to
 
