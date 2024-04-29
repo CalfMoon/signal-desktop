@@ -25,3 +25,38 @@
   --mantle: #181825;
   --crust: #11111b;
 }
+
+/*
+ _   _               ____
+| \ | | __ ___   __ | __ )  __ _ _ __ ___
+|  \| |/ _` \ \ / / |  _ \ / _` | '__/ __|
+| |\  | (_| |\ V /  | |_) | (_| | |  \__ \
+|_| \_|\__,_| \_/   |____/ \__,_|_|  |___/
+*/
+
+/* left most bar */
+.NavTabs {
+  background-color: var(--mantle) !important;
+}
+
+.NavTabs__ItemButton:hover {
+  background-color: var(--surface0) !important;
+}
+
+.NavTabs__Item[aria-selected="true"] > span > .NavTabs__ItemButton {
+  background-color: var(--surface1) !important;
+}
+
+/* second to left bar */
+.NavSidebar {
+  background-color: var(--mantle) !important;
+}
+
+.module-conversation-list__item--contact-or-conversation--is-selected {
+  background-color: var(--surface1) !important;
+}
+
+.module-conversation-list__item--contact-or-conversation--is-button:hover,
+.module-conversation-list__item--contact-or-conversation--is-button:focus {
+  background-color: var(--surface0) !important;
+}
