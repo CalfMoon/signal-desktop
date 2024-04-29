@@ -102,3 +102,16 @@
 .module-composition-input__input {
   background-color: var(--surface0) !important;
 }
+
+/* the today or yesterday thing that appears when you scroll up */
+.TimelineDateHeader--floating {
+  background-color: var(--surface0) !important;
+}
+
+.TimelineFloatingHeader__spinner-container {
+  background-color: var(--surface0) !important;
+}
+
+.ScrollDownButton {
+  background-color: var(--surface0) !important;
+}
