@@ -93,6 +93,11 @@
   background-color: var(--surface0) !important;
 }
 
+/* the vm player that appears at top */
+.MiniPlayer {
+  background-color: var(--surface1) !important;
+}
+
 /* conversation area */
 .module-timeline {
   background-color: var(--base) !important;
