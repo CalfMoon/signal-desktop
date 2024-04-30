@@ -93,6 +93,11 @@
   border: 0px !important;
 }
 
+/* call again button */
+.module-Button--system-message {
+  background-color: var(--surface1) !important;
+}
+
 /* the area where you write message, attach file, send vm, etc. */
 .CompositionArea {
   background-color: var(--crust) !important;
