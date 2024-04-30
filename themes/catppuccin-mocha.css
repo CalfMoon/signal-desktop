@@ -88,6 +88,11 @@
   background-color: var(--crust) !important;
 }
 
+/* call, search, etc button present at conversation header */
+.module-ConversationHeader__button:hover {
+  background-color: var(--surface0) !important;
+}
+
 /* conversation area */
 .module-timeline {
   background-color: var(--base) !important;
