@@ -168,17 +168,17 @@
  \___/|___/\___|_|    |_|   |_|  \___/|_| |_|_|\___|
 */
 
-/* background of user details pannel */
+/* background of user details panel */
 .ConversationPanel, .ConversationPanel__header {
   background-color: var(--base) !important;
 }
 
 /* video, audio, mute and search button */
 .module-Button--details {
-  background-color: var(--overlay1) !important;
+  background-color: var(--surface1) !important;
 }
 
 /* nickname, chatcolor, add to group and other button */
-.ConversationDetails-pannel-row__root--button:hover {
-  background-color: var(--overlay0) !important;
+.ConversationDetails-panel-row__root--button:hover {
+  background-color: var(--surface0) !important;
 }
