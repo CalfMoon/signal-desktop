@@ -187,3 +187,16 @@
 .ConversationDetails-panel-row__root--button:hover {
   background-color: var(--surface0) !important;
 }
+
+/*
+           _
+ _ __ ___ (_)___  ___
+| '_ ` _ \| / __|/ __|
+| | | | | | \__ \ (__
+|_| |_| |_|_|___/\___|
+*/
+
+/* background when viewing image */
+.Lightbox__animated {
+  background-color: var(--base) !important;
+}
