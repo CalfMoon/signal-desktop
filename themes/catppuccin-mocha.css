@@ -188,9 +188,29 @@
   background-color: var(--surface1) !important;
 }
 
+/* disappering message timer */
+.module-select > select {
+  background-color: var(--surface0) !important;
+}
+
 /* nickname, chatcolor, add to group and other button */
 .ConversationDetails-panel-row__root--button:hover {
   background-color: var(--surface0) !important;
+}
+
+/* add to group button background color */
+.ConversationDetails-groups__add-to-group-icon {
+  background-color: var(--surface0) !important;
+}
+
+/* the user profile, signal connection and safety number popup */
+.module-Modal {
+  background-color: var(--base) !important;
+}
+
+/* mark as varified or clear verification button */
+.module-SafetyNumberViewer__button > button {
+  background-color: var(--surface1) !important;
 }
 
 /*
