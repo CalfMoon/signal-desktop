@@ -34,9 +34,6 @@
 <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/mocha.webp"/>
 </details>
 
-## Status
-The project in its current state is in no way complete. [TODO](TODO.md) file contains the list of things completed and remaining to complete.
-
 ## Usage
 
 ### Windows
