@@ -52,6 +52,11 @@
   background-color: var(--mantle) !important;
 }
 
+/* view archive button when clicking on ... */
+.ContextMenu__popper--single-item {
+  background-color: var(--surface0) !important;
+}
+
 .module-conversation-list__item--contact-or-conversation--is-selected {
   background-color: var(--surface1) !important;
 }
@@ -91,6 +96,16 @@
 /* call, search, etc button present at conversation header */
 .module-ConversationHeader__button:hover {
   background-color: var(--surface0) !important;
+}
+
+/* ... menu at conversation header */
+.react-contextmenu {
+  background-color: var(--surface0) !important;
+}
+
+/* ... menu hover */
+.react-contextmenu-item:hover {
+  background-color: var(--surface1) !important;
 }
 
 /* the vm player that appears at top */
