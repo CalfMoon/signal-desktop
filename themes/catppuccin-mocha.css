@@ -168,8 +168,27 @@
                         |___/
 */
 
+/* background when contact isn't selected */
 .CallsTab__EmptyState {
-  background: var(--base) !important;
+  background-color: var(--base) !important;
+}
+
+/* background when contact is selected */
+.CallsTab__ConversationCallDetails {
+  background-color: var(--base) !important;
+}
+
+/* contact list sidebar item */
+.CallsList__ItemTile:hover {
+  background-color: var(--surface0) !important;
+}
+
+.CallsList__ItemTile[aria-selected="true"] {
+  background-color: var(--surface1) !important;
+}
+
+.CallsNewCall_ItemActionButton {
+  background-color: var(--surface2) !important;
 }
 
 /*
