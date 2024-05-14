@@ -183,11 +183,6 @@
   background-color: var(--base) !important;
 }
 
-/* video, audio, mute and search button */
-.module-Button--details {
-  background-color: var(--surface1) !important;
-}
-
 /* disappering message timer */
 .module-select > select {
   background-color: var(--surface0) !important;
@@ -224,6 +219,15 @@
 /* background when viewing image */
 .Lightbox__animated {
   background-color: var(--base) !important;
+}
+
+/* many of the buttons */
+.module-Button {
+  background-color: var(--surface1) !important;
+}
+
+.module-Button:hover {
+  background-color: var(--surface0) !important;
 }
 
 /*
