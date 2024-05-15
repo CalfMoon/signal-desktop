@@ -116,7 +116,7 @@
 }
 
 /* ... menu hover */
-.react-contextmenu-item:hover {
+.react-contextmenu-item--selected {
   background-color: var(--surface1) !important;
 }
 
