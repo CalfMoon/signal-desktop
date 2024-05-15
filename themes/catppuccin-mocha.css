@@ -66,8 +66,15 @@
   background-color: var(--surface1) !important;
 }
 
-.module-conversation-list__item--contact-or-conversation--is-button:hover,
-.module-conversation-list__item--contact-or-conversation--is-button:focus {
+/* no archived chat text */
+.module-left-pane__archive-helper-text {
+  background-color: var(--surface0) !important;
+}
+
+.module-conversation-list__item--contact-or-conversation:hover,
+.module-conversation-list__item--contact-or-conversation:focus,
+.module-conversation-list__item--archive-button:hover,
+.module-conversation-list__item--archive-button:focus {
   background-color: var(--surface0) !important;
 }
 
