@@ -106,7 +106,8 @@
 }
 
 /* call, search, etc button present at conversation header */
-.module-ConversationHeader__button:hover {
+.module-ConversationHeader__button:hover,
+.module-ConversationHeader__button:focus {
   background-color: var(--surface0) !important;
 }
 
@@ -304,6 +305,10 @@
 /* page selector selected background */
 .Preferences__button--selected {
   background-color: var(--surface1) !important;
+}
+
+.Preferences__button:focus {
+  background-color: var(--surface0) !important;
 }
 
 /* language and chat color button */
