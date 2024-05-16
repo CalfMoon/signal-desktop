@@ -319,3 +319,35 @@
 .module-Button--secondary--destructive {
   color: var(--red) !important;
 }
+
+/*
+  ____      _ _
+ / ___|__ _| | |
+| |   / _` | | |
+| |__| (_| | | |
+ \____\__,_|_|_|
+*/
+
+.module-calling__container {
+  background-color: var(--base) !important;
+}
+
+/* cancel and settings button */
+.CallSettingsButton__Button {
+  background-color: var(--surface0) !important;
+}
+
+/* the bar at the bottom during calls */
+.CallControls {
+  background-color: var(--surface0) !important;
+}
+
+/* mike and camera button */
+.CallingButton__icon {
+  background-color: var(--surface2) !important;
+}
+
+/* your pfp box during call */
+.module-calling__background {
+  background-color: var(--surface0) !important;
+}
