@@ -15,7 +15,7 @@
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/preview.webp"/>
 </p>
 
-## Previews
+# Previews
 
 <details>
 <summary>🌻 Latte</summary>
@@ -34,7 +34,13 @@
 <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/previews/mocha.webp"/>
 </details>
 
-## Usage
+# Usage
+
+## Automatic
+
+Follow instruction in [Signal Themer](https://github.com/CalfMoon/signal-themer)
+
+## Manual
 
 ### Windows
 1. Install 7-zip and its asar7z plugin.
@@ -53,7 +59,7 @@
 5. Remove the temp directory.
 6. Enjoy!
 
-## 💝 Thanks to
+# 💝 Thanks to
 
 - [CalfMoon](https://github.com/CalfMoon)
 
