@@ -36,10 +36,6 @@
 
 # Usage
 
-## Automatic
-
-Follow instruction in [Signal Themer](https://github.com/CalfMoon/signal-themer)
-
 ## Manual
 
 ### Windows
