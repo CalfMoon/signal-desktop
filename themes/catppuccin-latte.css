@@ -133,9 +133,8 @@
 }
 
 /* messages */
-.module-message__container--incoming,
-.module-message__container--outgoing {
-	background-color: var(--surface0) !important;
+.module-message__container--incoming {
+  background-color: var(--surface0) !important;
 }
 
 /* replying box */
