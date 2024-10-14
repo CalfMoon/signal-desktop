@@ -48,7 +48,8 @@
 }
 
 /* buttons in qr and link section of personal user profile */
-.UsernameLinkModalBody__actions__save, .UsernameLinkModalBody__actions__color {
+.UsernameLinkModalBody__actions__save,
+.UsernameLinkModalBody__actions__color {
   background-color: var(--surface1) !important;
 }
 
@@ -225,7 +226,8 @@
 */
 
 /* background of user details panel */
-.ConversationPanel, .ConversationPanel__header {
+.ConversationPanel,
+.ConversationPanel__header {
   background-color: var(--base) !important;
 }
 
