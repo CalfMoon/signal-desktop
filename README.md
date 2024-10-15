@@ -50,8 +50,9 @@
 2. Extract asar into a temporary directory and change directory. `asar e /usr/lib/signal-desktop/resources/app.asar temp/ && cd temp/stylesheets`
 3. Copy and paste theme you want to use into current directory.
 4. Add import statement at the top of `manifest.css` file. `@import "catppuccin-<flavour>.css";` Replace `<flavour>` with flavour you want to use.
-5. Remove the temp directory.
-6. Enjoy!
+5. Pack the asar. `cd /usr/lib/signal-desktop/resouces && asar p temp/ app.asar`
+6. Remove the temp directory.
+7. Enjoy!
 
 # 💝 Thanks to
 
