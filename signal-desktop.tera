@@ -117,8 +117,8 @@ whiskers:
 }
 
 /* replying box */
-.module-quote__primary,
-.module-quote__icon-container {
+.module-quote--incoming > .module-quote__primary,
+.module-quote--incoming > .module-quote__icon-container {
   background-color: #{{surface1.hex}} !important;
   border: 0px !important;
 }
