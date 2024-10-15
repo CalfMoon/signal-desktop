@@ -1,32 +1,3 @@
-:root {
-  --rosewater: #f4dbd6;
-  --flamingo: #f0c6c6;
-  --pink: #f5bde6;
-  --mauve: #c6a0f6;
-  --red: #ed8796;
-  --maroon: #ee99a0;
-  --peach: #f5a97f;
-  --yellow: #eed49f;
-  --green: #a6da95;
-  --teal: #8bd5ca;
-  --sky: #91d7e3;
-  --sapphire: #7dc4e4;
-  --blue: #8aadf4;
-  --lavender: #b7bdf8;
-  --text: #cad3f5;
-  --subtext1: #b8c0e0;
-  --subtext0: #a5adcb;
-  --overlay2: #939ab7;
-  --overlay1: #8087a2;
-  --overlay0: #6e738d;
-  --surface2: #5b6078;
-  --surface1: #494d64;
-  --surface0: #363a4f;
-  --base: #24273a;
-  --mantle: #1e2030;
-  --crust: #181926;
-}
-
 /*
  _   _               ____
 | \ | | __ ___   __ | __ )  __ _ _ __ ___
@@ -37,47 +8,47 @@
 
 /* left most bar */
 .NavTabs {
-  background-color: var(--mantle) !important;
+  background-color: #1e2030 !important;
 }
 
 .NavTabs__ItemButton:hover {
-  background-color: var(--surface0) !important;
+  background-color: #363a4f !important;
 }
 
 .NavTabs__Item[aria-selected="true"] > span > .NavTabs__ItemButton {
-  background-color: var(--surface1) !important;
+  background-color: #494d64 !important;
 }
 
 /* buttons in qr and link section of personal user profile */
 .UsernameLinkModalBody__actions__save,
 .UsernameLinkModalBody__actions__color {
-  background-color: var(--surface1) !important;
+  background-color: #494d64 !important;
 }
 
 /* second to left bar */
 .NavSidebar {
-  background-color: var(--mantle) !important;
+  background-color: #1e2030 !important;
 }
 
 /* view archive button when clicking on ... */
 .ContextMenu__popper--single-item {
-  background-color: var(--surface0) !important;
+  background-color: #363a4f !important;
 }
 
 .module-conversation-list__item--contact-or-conversation--is-selected {
-  background-color: var(--surface1) !important;
+  background-color: #494d64 !important;
 }
 
 /* no archived chat text */
 .module-left-pane__archive-helper-text {
-  background-color: var(--surface0) !important;
+  background-color: #363a4f !important;
 }
 
 .module-conversation-list__item--contact-or-conversation:hover,
 .module-conversation-list__item--contact-or-conversation:focus,
 .module-conversation-list__item--archive-button:hover,
 .module-conversation-list__item--archive-button:focus {
-  background-color: var(--surface0) !important;
+  background-color: #363a4f !important;
 }
 
 /*
@@ -90,7 +61,7 @@
 */
 
 .Inbox__no-conversation-open {
-  background-color: var(--base) !important;
+  background-color: #24273a !important;
 }
 
 /*
@@ -104,73 +75,73 @@
 
 /* the bar at the top containing your contact name */
 .module-ConversationHeader {
-  background-color: var(--crust) !important;
+  background-color: #181926 !important;
 }
 
 /* call, search, etc button present at conversation header */
 .module-ConversationHeader__button:hover,
 .module-ConversationHeader__button:focus {
-  background-color: var(--surface0) !important;
+  background-color: #363a4f !important;
 }
 
 /* ... menu at conversation header */
 .react-contextmenu {
-  background-color: var(--surface0) !important;
+  background-color: #363a4f !important;
 }
 
 /* ... menu hover */
 .react-contextmenu-item--selected {
-  background-color: var(--surface1) !important;
+  background-color: #494d64 !important;
 }
 
 /* the vm player that appears at top */
 .MiniPlayer {
-  background-color: var(--surface1) !important;
+  background-color: #494d64 !important;
 }
 
 /* conversation area */
 .module-timeline {
-  background-color: var(--base) !important;
+  background-color: #24273a !important;
 }
 
 /* messages */
 .module-message__container--incoming {
-  background-color: var(--surface0) !important;
+  background-color: #363a4f !important;
 }
 
 /* replying box */
 .module-quote__primary,
 .module-quote__icon-container {
-  background-color: var(--surface1) !important;
+  background-color: #494d64 !important;
   border: 0px !important;
 }
 
 /* call again button */
 .module-Button--system-message {
-  background-color: var(--surface1) !important;
+  background-color: #494d64 !important;
 }
 
 /* the area where you write message, attach file, send vm, etc. */
 .CompositionArea {
-  background-color: var(--crust) !important;
+  background-color: #181926 !important;
 }
 
 /* the actual typing box */
 .module-composition-input__input {
-  background-color: var(--surface0) !important;
+  background-color: #363a4f !important;
 }
 
 /* the today or yesterday thing that appears when you scroll up */
 .TimelineDateHeader--floating {
-  background-color: var(--surface0) !important;
+  background-color: #363a4f !important;
 }
 
 .TimelineFloatingHeader__spinner-container {
-  background-color: var(--surface0) !important;
+  background-color: #363a4f !important;
 }
 
 .ScrollDownButton {
-  background-color: var(--surface0) !important;
+  background-color: #363a4f !important;
 }
 
 /*
@@ -184,25 +155,25 @@
 
 /* background when contact isn't selected */
 .CallsTab__EmptyState {
-  background-color: var(--base) !important;
+  background-color: #24273a !important;
 }
 
 /* background when contact is selected */
 .CallsTab__ConversationCallDetails {
-  background-color: var(--base) !important;
+  background-color: #24273a !important;
 }
 
 /* contact list sidebar item */
 .CallsList__ItemTile:hover {
-  background-color: var(--surface0) !important;
+  background-color: #363a4f !important;
 }
 
 .CallsList__ItemTile[aria-selected="true"] {
-  background-color: var(--surface1) !important;
+  background-color: #494d64 !important;
 }
 
 .CallsNewCall_ItemActionButton {
-  background-color: var(--surface2) !important;
+  background-color: #5b6078 !important;
 }
 
 /*
@@ -215,7 +186,7 @@
 */
 
 .Stories__placeholder {
-  background-color: var(--base) !important;
+  background-color: #24273a !important;
 }
 
 /*
@@ -229,38 +200,38 @@
 /* background of user details panel */
 .ConversationPanel,
 .ConversationPanel__header {
-  background-color: var(--base) !important;
+  background-color: #24273a !important;
 }
 
 /* disappering message timer */
 .module-select > select {
-  background-color: var(--surface0) !important;
+  background-color: #363a4f !important;
 }
 
 /* nickname, chatcolor, add to group and other button */
 .ConversationDetails-panel-row__root--button:hover {
-  background-color: var(--surface0) !important;
+  background-color: #363a4f !important;
 }
 
 /* nickname edit menu*/
 .Input__container {
-  background-color: var(--surface0) !important;
-  border-color: var(--overlay2) !important;
+  background-color: #363a4f !important;
+  border-color: #939ab7 !important;
 }
 
 /* add to group button background color */
 .ConversationDetails-groups__add-to-group-icon {
-  background-color: var(--surface0) !important;
+  background-color: #363a4f !important;
 }
 
 /* the user profile, signal connection and safety number popup */
 .module-Modal {
-  background-color: var(--base) !important;
+  background-color: #24273a !important;
 }
 
 /* mark as varified or clear verification button */
 .module-SafetyNumberViewer__button > button {
-  background-color: var(--surface1) !important;
+  background-color: #494d64 !important;
 }
 
 /*
@@ -273,16 +244,16 @@
 
 /* background when viewing image */
 .Lightbox__animated {
-  background-color: var(--base) !important;
+  background-color: #24273a !important;
 }
 
 /* many of the buttons */
 .module-Button {
-  background-color: var(--surface1) !important;
+  background-color: #494d64 !important;
 }
 
 .module-Button:hover {
-  background-color: var(--surface0) !important;
+  background-color: #363a4f !important;
 }
 
 /*
@@ -296,30 +267,30 @@
 
 /* side pannel of settings */
 .Preferences__page-selector {
-  background-color: var(--crust) !important;
+  background-color: #181926 !important;
 }
 
 /* main settings pannel */
 .Preferences__settings-pane {
-  background-color: var(--base) !important;
+  background-color: #24273a !important;
 }
 
 /* page selector selected background */
 .Preferences__button--selected {
-  background-color: var(--surface1) !important;
+  background-color: #494d64 !important;
 }
 
 .Preferences__button:focus {
-  background-color: var(--surface0) !important;
+  background-color: #363a4f !important;
 }
 
 /* language and chat color button */
 .Preferences__control--clickable:hover {
-  background-color: var(--surface0) !important;
+  background-color: #363a4f !important;
 }
 
 .module-Button--secondary--destructive {
-  color: var(--red) !important;
+  color: #ed8796 !important;
 }
 
 /*
@@ -331,25 +302,25 @@
 */
 
 .module-calling__container {
-  background-color: var(--base) !important;
+  background-color: #24273a !important;
 }
 
 /* cancel and settings button */
 .CallSettingsButton__Button {
-  background-color: var(--surface0) !important;
+  background-color: #363a4f !important;
 }
 
 /* the bar at the bottom during calls */
 .CallControls {
-  background-color: var(--surface0) !important;
+  background-color: #363a4f !important;
 }
 
 /* mike and camera button */
 .CallingButton__icon {
-  background-color: var(--surface2) !important;
+  background-color: #5b6078 !important;
 }
 
 /* your pfp box during call */
 .module-calling__background {
-  background-color: var(--surface0) !important;
+  background-color: #363a4f !important;
 }
