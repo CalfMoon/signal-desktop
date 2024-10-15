@@ -36,9 +36,7 @@
 
 # Usage
 
-## Manual
-
-### Windows
+## Windows
 1. Install 7-zip and its asar7z plugin.
 2. Open `C:\Users\user_name\AppData\Local\Programs\signal-desktop\resources\app.asar` with 7zip.
 3. Go into stylesheets directory.
@@ -47,7 +45,7 @@
 6. Save and close your editor.
 7. Enjoy!
 
-### Linux
+## Linux
 1. Install npm's asar package globally. `sudo npm install -g @electron/asar`
 2. Extract asar into a temporary directory and change directory. `asar e /usr/lib/signal-desktop/resources/app.asar temp/ && cd temp/stylesheets`
 3. Copy and paste theme you want to use into current directory.
