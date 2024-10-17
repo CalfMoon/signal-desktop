@@ -55,9 +55,9 @@
 
     cd ${TEMP}/stylesheets
     curl https://raw.github.com/.../catppuccin-${FLAVOR}.css -O catppuccin-${FLAVOR}.css
-    echo '@import catppuccin-'${FLAVOR}.css >> manifest.css
+    echo '@import catppuccin-'${FLAVOR}.css | cat - manifest.css > temp && mv temp
 
-    cd /usr/lib/signal-desktop/resources && asar p ${TEMP} app.asar
+    cd /usr/lib/signal-desktop/resources && sudo asar p ${TEMP} app.asar
     ```
 1. Enjoy!
 
