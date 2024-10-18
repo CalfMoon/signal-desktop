@@ -50,30 +50,31 @@
 	```bash
 	npm install -g @electron/asar
 	```
-1. Set required variables for later steps. Replace `<flavor>` with desired Catppuccin flavor (e.g. `mocha`)
+2. Set required variables for later steps. Replace `<flavor>` with desired Catppuccin flavor (e.g. `mocha`)
 	```bash
 	FLAVOR=<flavor> TEMP=$(mktemp -d) SIGNAL_DIR="/usr/lib/signal-desktop/resources"
 	```
-	> If using the Flatpak version the Signal directory should be:
-	> 
-	> `SIGNAL_DIR="/var/lib/flatpak/app/org.signal.Signal/current/active/files/Signal/resources"`
-1. Extract asar into the temporary directory
+  > [!NOTE]
+  > If using the Flatpak version the Signal directory should be:
+  > 
+  > `SIGNAL_DIR="/var/lib/flatpak/app/org.signal.Signal/current/active/files/Signal/resources"`
+3. Extract asar into the temporary directory
 	```bash
 	asar e "${SIGNAL_DIR}/app.asar" ${TEMP}
 	```
-1. Download the theme file from this repository
+4. Download the theme file from this repository
 	```bash
 	curl "https://raw.githubusercontent.com/CalfMoon/signal-desktop/refs/heads/main/themes/catppuccin-${FLAVOR}.css" -o "${TEMP}/stylesheets/catppuccin-${FLAVOR}.css"
 	```
-1. Add import for the Catppuccin theme to the start of `manifest.css`
+5. Add import for the Catppuccin theme to the start of `manifest.css`
 	```bash
 	sed -i "1i @import \"catppuccin-${FLAVOR}.css\";" "${TEMP}/stylesheets/manifest.css"
 	```
-1. Pack the new theme into a new `app.asar` (needs `sudo` in order to write to `/usr/lib`)
+6. Pack the new theme into a new `app.asar` (needs `sudo` in order to write to `/usr/lib`)
 	```bash
 	sudo asar p ${TEMP} "${SIGNAL_DIR}/app.asar"
 	```
-1. Enjoy!
+7. Enjoy!
 
 # 💝 Thanks to
 
