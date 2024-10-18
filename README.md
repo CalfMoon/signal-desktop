@@ -54,9 +54,9 @@
 	```bash
 	FLAVOR=<flavor> TEMP=$(mktemp -d) SIGNAL_DIR="/usr/lib/signal-desktop/resources"
 	```
-> Note:
-> If using the Flatpak version the signal directory should be
-> `SIGNAL_DIR="/var/lib/flatpak/app/org.signal.Signal/current/active/files/Signal/resources"`
+	> If using the Flatpak version the Signal directory should be:
+	> 
+	> `SIGNAL_DIR="/var/lib/flatpak/app/org.signal.Signal/current/active/files/Signal/resources"`
 1. Extract asar into the temporary directory
 	```bash
 	asar e "${SIGNAL_DIR}/app.asar" ${TEMP}
