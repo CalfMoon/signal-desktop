@@ -47,19 +47,27 @@
 
 ## Linux
 1. Install `@electron/asar` from npm, i.e. with `npm install -g @electron/asar`
-1. Extract asar into a temporary directory and change directory.
-    ```bash
-    TEMP=$(mktemp -d)
-    FLAVOR=mocha
-    asar e /usr/lib/signal-desktop/resources/app.asar ${TEMP}
-
-    cd ${TEMP}/stylesheets
-    curl https://raw.github.com/.../catppuccin-${FLAVOR}.css -O catppuccin-${FLAVOR}.css
-    echo '@import catppuccin-'${FLAVOR}.css | cat - manifest.css > temp && mv temp
-
-    cd /usr/lib/signal-desktop/resources && sudo asar p ${TEMP} app.asar
-    ```
-1. Enjoy!
+2. Set requred variables for later steps. Replace `<flavor>` with desired catppuccin falvor (e.g. `mocha`)
+```bash
+FLAVOR=<flavor> TEMP=$(mktemp -d) SIGNAL_DIR="/usr/lib/signal-desktop/resources"
+```
+3. Extract asar into the temporary directory
+```bash
+asar e "${SIGNAL_DIR}/app.asar" ${TEMP}
+```
+4. Download the theme file from this repository
+```bash
+curl "https://raw.githubusercontent.com/CalfMoon/signal-desktop/refs/heads/main/themes/catppuccin-${FLAVOR}.css" -o "${TEMP}/stylesheets/catppuccin-${FLAVOR}.css"
+```
+5. Add import for the catppuccin theme to the start of `manifest.css`
+```bash
+sed -i "1i @import \"catppuccin-${FLAVOR}.css\";" "${TEMP}/stylesheets/manifest.css"
+```
+6. Pack the new theme into a new `app.asar` (needs `sudo` in order to write to `/usr/lib`)
+```bash
+sudo asar p ${TEMP} "${SIGNAL_DIR}/app.asar"
+```
+7. Enjoy!
 
 # 💝 Thanks to
 
