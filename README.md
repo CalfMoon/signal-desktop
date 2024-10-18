@@ -50,10 +50,13 @@
 	```bash
 	npm install -g @electron/asar
 	```
-1. Set requred variables for later steps. Replace `<flavor>` with desired catppuccin falvor (e.g. `mocha`)
+1. Set required variables for later steps. Replace `<flavor>` with desired Catppuccin flavor (e.g. `mocha`)
 	```bash
 	FLAVOR=<flavor> TEMP=$(mktemp -d) SIGNAL_DIR="/usr/lib/signal-desktop/resources"
 	```
+> Note:
+> If using the Flatpak version the signal directory should be
+> `SIGNAL_DIR="/var/lib/flatpak/app/org.signal.Signal/current/active/files/Signal/resources"`
 1. Extract asar into the temporary directory
 	```bash
 	asar e "${SIGNAL_DIR}/app.asar" ${TEMP}
@@ -62,7 +65,7 @@
 	```bash
 	curl "https://raw.githubusercontent.com/CalfMoon/signal-desktop/refs/heads/main/themes/catppuccin-${FLAVOR}.css" -o "${TEMP}/stylesheets/catppuccin-${FLAVOR}.css"
 	```
-1. Add import for the catppuccin theme to the start of `manifest.css`
+1. Add import for the Catppuccin theme to the start of `manifest.css`
 	```bash
 	sed -i "1i @import \"catppuccin-${FLAVOR}.css\";" "${TEMP}/stylesheets/manifest.css"
 	```
